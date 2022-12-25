@@ -1,0 +1,161 @@
+/*  ------- Google Fonts -------  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e2e2e2;
+}
+
+.main {
+  position: relative;
+  height: 500px;
+  width: 800px;
+  box-shadow: 0 0 15px rgba(0, 0, 0.1);
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.9);
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  background: #fff;
+}
+
+.right h1 {
+  margin: 55px 0 40px;
+}
+
+form .form-group input[type="email"] {
+  margin: 0 21px 10px 0;
+  width: 250px;
+  height: 40px;
+  border-radius: 3px;
+  background: #e9e9e9;
+  border: 1px solid #e9e9e9;
+  padding-left: 45px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+form .form-group input[type="Password"] {
+  margin: 0 21px 10px 0;
+  width: 250px;
+  height: 40px;
+  border-radius: 3px;
+  background: #e9e9e9;
+  border: 1px solid #e9e9e9;
+  padding-left: 45px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+form .form-group i {
+  transform: translateX(35px);
+}
+
+form .form-group input[type="checkbox"] {
+  margin: 0 0 30px -170px;
+}
+
+form .form-group label {
+  color: #575757;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+form button {
+  cursor: pointer;
+  background: #1a99ee;
+  width: 300px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+form button:hover {
+  background: #198edb;
+}
+
+.others p {
+  color: #575757;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.others i {
+  cursor: pointer;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin: 10px 2px 0;
+}
+
+.others .one {
+  background: #3b5998;
+}
+
+.others .two {
+  background: #e1306c;
+}
+
+.others .three {
+  background: #1d9ff0;
+}
+
+@media (max-width: 810px) {
+  .main {
+    width: 400px;
+  }
+
+  .main .right {
+    width: 100%;
+    background: #ffffffdc;
+  }
+
+  .main .left {
+    width: 100%;
+    filter: brightness(1);
+  }
+
+  form .form-group input[type="email"] {
+    background: #d4d4d4;
+  }
+
+  form .form-group input[type="password"] {
+    background: #d4d4d4;
+  }
+}
